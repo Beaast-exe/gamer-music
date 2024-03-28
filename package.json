@@ -5,7 +5,9 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "node src/index.js",
-		"dev": "nodemon src/index.js"
+		"dev": "nodemon src/index.js",
+		"guild": "node src/deploySlashCommands.js guild 989661003795025990 clear",
+		"global": "node src/deploySlashCommands.js global clear"
 	},
 	"dependencies": {
 		"@discordjs/voice": "^0.16.1",
