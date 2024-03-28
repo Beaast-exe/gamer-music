@@ -1,0 +1,27 @@
+module.exports = {
+	token: '', // BOT TOKEN
+	prefix: '-', // PREFIX FOR COMMANDS
+	ownerID: '', // OWNER ID
+	guild: '000000000000000000', // YOUR DISCORD SERVER'S ID
+	embedColor: '#ff0000',
+	check: '✅',
+	music: {
+		emojis: {
+			play: '▶️',
+			sto: '⏹️',
+			queue: '📄',
+			success: '☑️',
+			repeat: '🔁',
+			error: '❌'
+		},
+		leaveWhenEmpty: {
+			enabled: true,
+			time: 120000 // MILLISECONDS: SECONDS * 1000
+		}
+	},
+	spotify: {
+		tracks: false, // Enable Spotify Support
+		spotify_id: 'DONT_USE', // LEAVE DONT_USE when tracks is false
+		spotify_secret: 'DONT_USE' // LEAVE DONT_USE when tracks is false
+	}
+};
