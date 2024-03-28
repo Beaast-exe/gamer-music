@@ -21,9 +21,9 @@ class GamerClient extends Client {
 		process.on('uncaughtException', error => console.log(error));
 
 		this.config = require('./config/settings');
-		this.owner = this.config.ownerID;
-		this.color = this.config.embedColor;
-		if (!this.token) this.token = this.config.token;
+		this.owner = this.config.OWNER_ID;
+		this.color = this.config.EMBED_COLOR;
+		if (!this.token) this.token = this.config.TOKEN;
 
 		const client = this;
 
@@ -49,7 +49,7 @@ class GamerClient extends Client {
 module.exports = { GamerClient };
 
 function checkSpotify(client) {
-	if (client.config.spotify.tracks) {
+	if (client.config.SPOTIFY_TRACKS) {
 		console.log('[INFO] You\'ve (Enabled) Spotify More Tracks Support');
 		return spotifyOn(client);
 	} else {
@@ -62,8 +62,8 @@ function spotifyOn(client) {
 	return new SpotifyPlugin({
 		emitEventsAfterFetching: true,
 		api: {
-			clientId: client.config.spotify.spotify_id,
-			clientSecret: client.config.spotify.spotify_secret
+			clientId: client.config.SPOTIFY_ID,
+			clientSecret: client.config.SPOTIFY_SECRET
 		}
 	});
 }

@@ -21,7 +21,7 @@ module.exports = {
 	},
 	spotify: {
 		tracks: false, // Enable Spotify Support
-		spotify_id: '', // LEAVE EMPTY when tracks is false
-		spotify_secret: '' // LEAVE EMPTY when tracks is false
+		spotify_id: '', // LEAVE EMPTY when tracks is false || Get From Here: https://developer.spotify.com/dashboard/applications
+		spotify_secret: '' // LEAVE EMPTY when tracks is false || Get From Here: https://developer.spotify.com/dashboard/applications
 	}
 };
