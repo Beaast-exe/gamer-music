@@ -20,7 +20,7 @@ class GamerClient extends Client {
 		process.on('unhandledRejection', error => console.log(error));
 		process.on('uncaughtException', error => console.log(error));
 
-		this.config = require('./config');
+		this.config = require('./config/settings');
 		this.owner = this.config.ownerID;
 		this.color = this.config.embedColor;
 		if (!this.token) this.token = this.config.token;

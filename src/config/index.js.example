@@ -21,7 +21,7 @@ module.exports = {
 	},
 	spotify: {
 		tracks: false, // Enable Spotify Support
-		spotify_id: 'DONT_USE', // LEAVE DONT_USE when tracks is false
-		spotify_secret: 'DONT_USE' // LEAVE DONT_USE when tracks is false
+		spotify_id: '', // LEAVE EMPTY when tracks is false
+		spotify_secret: '' // LEAVE EMPTY when tracks is false
 	}
 };
